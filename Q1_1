@@ -1,0 +1,49 @@
+package com.mycompany.test;
+
+public class Encapsulation 
+{
+    private String Name;
+    private int Age;
+    private float Salary;
+    
+    public void setName(String n)
+    {
+        Name=n;
+    }
+    public String getName()
+    {
+        return Name;
+    }
+    public void setAge(int a)
+    {
+        Age=a;
+    }
+    
+    public int getAge()
+    {
+        return Age;
+    }    
+    Public void setSalary(float s)
+    {
+        Salary=s;
+    public float getSalary()
+    {
+        return Salary;
+    }
+}
+
+
+
+public class Test {
+
+    public static void main(String[] args)
+    {
+        Encapsulation e1=new Encapsulation();
+        e1.setName("Thilina");
+        e1.setAge(22);
+        e1.setSalary(10000.00f);
+        System.out.println("Name:"+e1.getName());
+        System.out.println("Age:"+e1.getAge());
+        System.out.println(“Salary:”+e1.getSalary());
+    }
+}
