@@ -1,0 +1,45 @@
+package com.mycompany.calculatesalary;
+
+public class SalaryProfile
+{
+    private String empName;
+    float basicSalary;
+    float bonus;
+    
+    public SalaryProfile(String empName,float basicSalary,float bonus)
+    {
+        this.empName=empName;
+        this.basicSalary=basicSalary;
+        this.bonus=bonus;
+    }
+    public String getName()
+    {
+        return empName;
+    }
+    public float getBSalary()
+    {
+        return basicSalary;
+    }
+    public float getBonus()
+    {
+        return bonus;
+    }
+    public float CalculateNetSalary()
+    {
+        return basicSalary+bonus;
+    }  
+}
+
+
+public class CalculateSalary 
+{
+
+    public static void main(String[] args)
+    {
+        SalaryProfile p1=new SalaryProfile("Bogdan",50000.00f,10000.00f);
+        System.out.println("Employee Name:"+p1.getName());
+        System.out.println("Basic Salary:"+p1.getBSalary());
+        System.out.println("Bonus:"+p1.getBonus());
+        System.out.println("Bonus Amount:"+p1.CalculateNetSalary());
+    }
+}
